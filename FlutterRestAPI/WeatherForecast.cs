@@ -1,4 +1,4 @@
-﻿namespace FlutterRestAPI;
+﻿namespace mongoDBRestApi;
 
 public class WeatherForecast
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace FlutterRestAPI.Controllers;
+namespace mongoDBRestApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]

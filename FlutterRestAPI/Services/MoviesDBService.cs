@@ -1,9 +1,9 @@
 ﻿using System;
-using FlutterRestAPI.Models;
+using mongoDBRestApi.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace FlutterRestAPI.Services
+namespace mongoDBRestApi.Services
 {
     public class MoviesDBService
     {

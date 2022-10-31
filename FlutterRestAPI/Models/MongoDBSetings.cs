@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FlutterRestAPI.Models
+namespace mongoDBRestApi.Models
 {
     public class MongoDBSetings
     {

@@ -1,7 +1,7 @@
-﻿using FlutterRestAPI.Models;
-using FlutterRestAPI.Services;
+﻿using mongoDBRestApi.Models;
+using mongoDBRestApi.Services;
 
-namespace FlutterRestAPI;
+namespace mongoDBRestApi;
 
 public class Program
 {
@@ -19,6 +19,11 @@ public class Program
         builder.Services.Configure<MongoDBSetings>(builder.Configuration.GetSection("MongoDB"));
 
         builder.Services.AddSingleton<MoviesDBService>();
+
+        builder.WebHost.UseKestrel(k =>
+        {
+            k.ListenAnyIP(5432);
+        });
 
         var app = builder.Build();
 

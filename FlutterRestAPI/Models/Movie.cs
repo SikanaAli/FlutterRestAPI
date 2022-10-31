@@ -3,10 +3,11 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Text.Json.Serialization;
 
-namespace FlutterRestAPI.Models
+namespace mongoDBRestApi.Models
 {
     public class Movie
     {
+
         public Movie()
         {
         }
@@ -27,6 +28,8 @@ namespace FlutterRestAPI.Models
         [JsonPropertyName("Synopsis")]
         public string Description { get; set; } = null!;
 
+
+        
     }
 }
 
