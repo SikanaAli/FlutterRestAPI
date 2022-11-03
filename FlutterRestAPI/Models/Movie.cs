@@ -28,8 +28,16 @@ namespace mongoDBRestApi.Models
         [JsonPropertyName("Synopsis")]
         public string Description { get; set; } = null!;
 
+        [BsonElement("liked")]
+        [JsonPropertyName("liked")]
+        public bool liked { get; set; }
 
-        
+
+        [BsonElement("watchlater")]
+        [JsonPropertyName("watchlater")]
+        public bool watchlater { get; set; }
+
+
     }
 }
 
